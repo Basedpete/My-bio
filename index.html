@@ -6,64 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-
     <title>My Bio</title>
 </head>
 <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-dark p-5 navbar-dark">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand"><img src="images/undraw_coding_re_iv62.svg" width="200px" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" style = "border: 2px solid #E0E0E0;">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-dark-subtle rounded">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><strong>My Bio</strong></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="jumbotron d-none d-lg-block text-light"><a href="#" class="text-decoration-none text-white"><h1>My Bio</h1></a></div>
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="#carousel" class="nav-link text-light" data-bs-target="#carousel" data-bs-slide-to="0"><h2>About Me</h2></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#experience" class="nav-link text-light" data-bs-target="#carousel" data-bs-slide-to="1"><h2>Experience</h2></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#goals" class="nav-link text-light" data-bs-target="#carousel" data-bs-slide-to="2"><h2>Goals</h2></a>
-                    </li>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-bs-target="carouselExampleFade" data-bs-slide="0" aria-current="page" href="#">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-target="carouselExampleFade" data-bs-slide="1" href="#">Experience</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-target="carouselExampleFade" data-bs-slide="2" href="#">Goals</a>
+                  </li>
                 </ul>
+                <!--Add in social links-->
+              </div>
             </div>
-        </div>
-    </nav>
+          </nav>
 
-    <!--Carousel-->
-
-    <div class="carousel slide" id="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <!--Carousel-->
+          <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active text-center mt-3 rounded">
+                <h1>About Me</h1>
+                <p class="fs-3">My name is Lucas Allen. Born and raised in East Texas. Grew up skateboarding and eventually got talented at cooking. Been working in restaurants for the past 8 years and am ready to switch to something new! Had a small passion in middle school for coding, mostly making minecraft mods. Have been self-learning the frontend for 3 months now.</p>
+              </div>
+              <div class="carousel-item text-center mt-3 rounded">
+                <h1>Experience</h1>
+                <p class="fs-3">Started off learning HTML/CSS. Feel like I'm about 75% with HTML and 50% with CSS. In the progress of learning Bootstrap.</p>
+              </div>
+              <div class="carousel-item text-center mt-3 rounded">
+                <h1>Goals</h1>
+                <p class="fs-3">
+                    My future goal is to secure a high paying job doing frontend development work.</p>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="container">
-                    <h1 class="text-center">About Me</h1>
-                    <p class="fs-3 text-center">My name is Lucas Allen. Born and raised in East Texas. Grew up skateboarding and eventually got talented at cooking. Been working in restaurants for the past 8 years and am ready to switch to something new! Had a small passion in middle school for coding, mostly making minecraft mods. Have been self-learning the frontend for 3 months now.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container">
-                    <h1 class="text-center">Experience</h1>
-                    <p class="fs-3 text-center">Started off learning HTML/CSS. Feel like I'm about 75% with HTML and 50% with CSS. In the progress of learning Bootstrap.</p>
-                </div>
-            </div>
-            <div class="carousel-item active">
-                <div class="container">
-                    <h1 class="text-center">Goals</h1>
-                    <p class="fs-3 text-center">My future goal is to secure a high paying job doing frontend development work.</p>
-                </div>
-            </div>
-        </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </body>
 </html>

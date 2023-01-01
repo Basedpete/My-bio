@@ -1,8 +1,33 @@
- nav h2:hover {
-    color: #8C10C3;
+body {
+    background: #f8f9fa;
 }
 
-.carousel-item {
-    height: 35rem;
-    background: #779
-}
+
+.carousel-item:nth-child(1) {
+    background-image: url('./images/mountain1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 550px;
+  }
+
+  .carousel-item:nth-child(2) {
+    background-image: url('./images/aurora-1197753.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 674px;
+  }
+
+  .carousel-item:nth-child(3) {
+    background-image: url('./images/mountain2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 674px;
+  }
+
+
+
+
+
