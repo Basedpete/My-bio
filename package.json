@@ -1,0 +1,22 @@
+{
+  "name": "my-bio-website-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Basedpete/My-bio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Basedpete/My-bio/issues"
+  },
+  "homepage": "https://github.com/Basedpete/My-bio#readme",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
