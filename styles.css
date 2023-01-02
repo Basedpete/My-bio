@@ -4,11 +4,10 @@ body {
 
 
 .carousel-item:nth-child(1) {
-    background-image: url('./images/mountain1.jpg');
+    background-image: url('./images/purplesunset1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding-bottom: 550px;
   }
 
   .carousel-item:nth-child(2) {
@@ -16,7 +15,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding-bottom: 674px;
   }
 
   .carousel-item:nth-child(3) {
@@ -24,7 +22,27 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding-bottom: 674px;
+  }
+
+  .carousel-item {
+    height: 70vh;
+  }
+
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  footer a {
+    color: inherit !important;
+  }
+
+  footer ul li {
+    display: inline-block;
+    
   }
 
 
